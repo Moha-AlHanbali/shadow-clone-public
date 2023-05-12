@@ -7,8 +7,33 @@ authors = ["Moha-AlHanbali <moha.alhanbali@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 Flask = "^2.1.1"
+python-dotenv = "^0.20.0"
+requests = "^2.27.1"
+textdistance = {extras = ["extras"], version = "^4.2.2"}
+PyGithub = "^1.55"
+pandas = "^1.4.2"
+mypy = "^0.942"
+types-requests = "^2.27.20"
+pandas-stubs = "^1.2.0"
+openpyxl = "^3.0.9"
+numpy = "^1.22.3"
+flask-expects-json = "^1.7.0"
+Flask-SQLAlchemy = "^2.5.1"
+psycopg2-binary = "^2.9.3"
+shelljob = "^0.6.3"
+flask-sock = "^0.5.2"
+Flask-JWT-Extended = "^4.4.0"
+google-api-python-client = "^2.48.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.5.1"
+gunicorn = "^20.1.0"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+Flask-Cors = "^3.0.10"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^22.3.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

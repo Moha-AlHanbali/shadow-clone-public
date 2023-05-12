@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Shadow Clone Receiver</title>
+</head>
+
+<body>
+    <h1 style="display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;">Shadow Clone Temporary Template</h1>
+
+    <br><br>
+
+    <div style="  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;">
+
+        <div style="display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;">
+            <form id="jwt-form" style="display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;">
+                <label for="jwt-field" style="display: flex;"> <h4>JWT Field </h4></label>
+
+                <textarea id="jwt-field" name="jwtField" rows="10" cols="50" placeholder="Enter your jwt here.."
+                    style="width: 60%;"></textarea>
+                <br><br>
+                <input type="submit" value="Request Access">
+            </form>
+        </div>
+        <br><br>
+
+        <div style="display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;">
+
+            <form id="json-form" style="display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;">
+                <label for="json-field" style="display: flex;"> <h4>JSON Field </h4></label>
+                <textarea id="json-field" name="jsonField" rows="10" cols="50"
+                    placeholder="Enter scan JSON here.." style="width: 60%;"></textarea>
+                <br><br>
+
+                <input type="submit" value="Request Access">
+
+            </form>
+        </div>
+
+        <br><br>
+    </div>
+    <br><br>
+    <br><br>
+
+    <div id="stream-output" style="display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;"></div>
+    <script>
+        {% include "websocket.js" %}
+    </script>
+
+</body>
+
+</html>
