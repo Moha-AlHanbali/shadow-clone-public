@@ -1,6 +1,6 @@
 # Shadow Clone API
 
-TBA
+### A cheat detection system for student assignments. Built as a Web API to compare repository content with a set of repositories.
 
 ---
 
